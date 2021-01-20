@@ -16,7 +16,7 @@
             }
         }
     }
-    ul {
+    ul.menu-wrapper {
         display: flex;
         align-items: center;
         list-style: none;
@@ -37,5 +37,25 @@
     .social-icons {
         font-size: 20px;
         color: white;
+    }
+}
+
+.active {
+    background: #ffffff;
+    color: #563d7c !important;
+}
+
+.social-icons {
+    .dropdown-toggle {
+        background: transparent;
+        border: 0;
+        &::after {
+            display: none;
+        }
+    }
+    .dropdown-menu {
+        right: 0 !important;
+        left: auto !important;
+        min-width: auto;
     }
 }

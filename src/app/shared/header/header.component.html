@@ -5,25 +5,25 @@
                 <a routerLink="/" href="#">NETWEAVERS</a>
             </h4>
         </div>
-        <div class="col-lg-6 col-md-6">
-            <ul>
+        <div class="col-lg-5 col-md-5">
+            <ul class="menu-wrapper">
                 <li>
-                    <a routerLink="/home" href="#">
+                    <a routerLinkActive="active" routerLink="/home" href="#">
                         HOME
                     </a>
                 </li>
                 <li>
-                    <a routerLink="/about" href="#">
+                    <a routerLinkActive="active" routerLink="/about" href="#">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a routerLink="/services" href="#">
+                    <a routerLinkActive="active" routerLink="/services" href="#">
                         SERVICES
                     </a>
                 </li>
                 <li>
-                    <a routerLink="/contact" href="#">
+                    <a routerLinkActive="active" routerLink="/contact" href="#">
                         CONTACT US
                     </a>
                 </li>
@@ -35,6 +35,20 @@
             <i class="fab fa-instagram pr-3"></i>
             <i class="fab fa-twitter"></i>
            </div>
+        </div>
+        <div class="col-lg-1 col-md-1">
+            <div *ngIf="isTokenValid" class="social-icons float-right">
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                        aria-controls="dropdown-basic">
+                        <i class="fas fa-user"></i>
+                </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic">
+                      <li role="menuitem"><a class="dropdown-item" (click)="logout()" href="javascript:void(0);">LogOut</a></li>
+                    </ul>
+                  </div>
+            </div>
         </div>
     </div>
 </header>

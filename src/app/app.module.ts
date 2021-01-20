@@ -13,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule, 
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
