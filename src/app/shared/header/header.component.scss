@@ -7,7 +7,14 @@
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
     padding: .5rem 1rem;
     h4 {
-        color: white;
+        a {
+            text-decoration: none;
+            color: white;
+            outline: 0;
+            &:hover,&:focus {
+                outline: 0;
+            }
+        }
     }
     ul {
         display: flex;
