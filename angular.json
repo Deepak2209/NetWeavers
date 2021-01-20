@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "netweavers"
+  "defaultProject": "netweavers",
+  "cli": {
+    "analytics": "36509d46-b952-4bc9-be6c-f543ae116b06"
+  }
 }
