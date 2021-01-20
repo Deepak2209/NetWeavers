@@ -1,0 +1,67 @@
+$brand-color: #F1C152;
+$brown: #180E0E;
+$light-gray : #C6BFB9;
+$default-font: #180E0E;
+.cmp-footer {
+  background: $brown;
+  color: $brand-color;
+  font-size: 12px;
+  &__heading {
+      font-size: 14px;
+  }
+  &__link {
+    display: block;
+    word-break: break-all;
+    text-decoration: none;
+    color: $brand-color;
+  }
+
+  &__text {
+      margin: 10px 0;
+      display: flex;
+      .fas {
+          margin-right: 5px;
+      }
+  }
+  &__tnc {
+      border-top: solid 1px $light-gray;
+      padding: 10px 0;
+      .col-md-6 {
+          padding: 0;
+      }
+  }
+  &__tnc-link {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      li {
+         display: inline-block;
+         padding: 0 10px;
+         border-left: solid 1px $brand-color;
+         &:first-child {
+             border: 0;
+         }
+
+         &:last-child {
+             padding-right: 0;
+         }
+      }
+      a{
+        color: $brand-color;
+        &:hover {
+            color: $brand-color;
+         } 
+      } 
+      .btn {
+        padding: 0;
+        color: $brand-color;
+        font-size: 12px;
+        text-decoration: none;
+        &:hover, &:focus {
+            text-decoration: none;
+            color: $brand-color !important;
+        }
+      } 
+  }
+}
